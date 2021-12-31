@@ -1,0 +1,238 @@
+/* Eric Meyer's Reset */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	outline: none;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 10px;
+}
+/*font face*/
+body {
+	font-size:100%;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.2;
+	color:#666666;
+	background: #fff;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+p{
+    font-size: 1.035rem;
+	line-height: 1.36;
+	margin-bottom: 15px;
+}
+body img {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;          
+}
+figure{
+	margin-bottom: 0;
+	margin: 0;
+}
+*:focus {
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*
+ 2.0.1) Font Face
+ -----------------------------*/
+/*Put Your font face Styles here*/
+
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+button, input, optgroup, select, textarea {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+input,select,textarea{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	border-radius:0;
+}
+ul,ol{
+	list-style-type: none;
+}
+a{
+	color:#fff;
+	font-size: 1.4rem;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	transition: all 0.5s;
+}
+a:hover{
+	text-decoration: none;
+	opacity: 0.8;
+}
+a:focus{
+	outline: none;
+	border:none;
+}
+input {
+	line-height: normal;
+	width: 100%;
+	color: #a5a5a5;
+    font-size: 2.001rem;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	border:none;
+	outline: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+	padding: 0;
+	border: none;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], input[type="file"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	line-height: normal;
+	overflow: visible;
+}
+button[disabled], input[disabled] {
+	cursor: default;
+	color: #999;
+	border-color: #ccc;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    /*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (max-device-width:767px) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="tel"], input[type="url"]{ font-size: 2.001rem;}
+
+}
+/*
+ 2.0.4) List Styles
+ ---------------------------------*/
+button{
+	border:none;
+	background: transparent;
+}
+.btn{
+	background-color: #0084e1;
+    color: #fff;
+    font-size: 1.155rem;
+    padding: 8px 47px 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 6px;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+	transition: all 0.5s;
+}
+.btn:hover{
+	background-color: transparent;
+	color: #4a83dd;
+	border: 1px solid #4a83dd;
+}
+/*
+ 2.0.9) Sprite Icons
+ -------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url("../images/sprite.png");
+	background-size: 400px 400px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	width: 14px;
+	font-size: 0;
+}
+/*global heading*/
+h1{
+	color: #4a83dd;
+	font-size: 2.489rem;
+	font-family: 'EB Garamond', serif;
+	margin-bottom: 9px;
+}
+h2{
+	color: #292929;
+	font-size: 1.244rem;
+	margin-bottom:14px;
+	font-family: 'Open Sans'
+}
+h3{
+	font-size: 0.889rem;
+	font-weight: 600;
+	 margin-bottom: 24px;
+}
+h4{
+	font-weight: 600;
+	font-size: 1.082rem;
+	color: #504d43;
+}
+h5{
+	font-size: 0.611rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+h6{
+	font-size: 2.489rem;
+}
+/* Containers*/
+.container {
+    max-width: 1170px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+/**pixel perfection code remove this on update**/
+body{
+	/* background: url("../bg/mobile_320.png") no-repeat; */
+	/* background:url("../bg/FUTURE-5_product_aboutProduct_v4.png") no-repeat; */
+	/* background: url("../bg/review.png") no-repeat; */
+	/* background:url("../bg/skin.png") no-repeat; */
+	background-position: center top;
+}
+.wrapper{				
+	/* opacity:0.4;	 */
+}
+
+
